@@ -1,0 +1,109 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>AdsDroid Sync</title>
+  <link href="css/bootstrap.min.css" rel="stylesheet" media="screen">
+  <link href="css/custom.css" rel="stylesheet" media="screen">
+</head>
+
+<body>
+  <header>
+    <img src="images/icon.png" alt="logo" />
+    <span>AdsDroid Sync</span>
+  </header>
+  <main class="wrapper">
+    <nav>
+      <ul class="nav tab-wrapper mb-3" id="pills-tab" role="tablist">
+        <li class="tab-item active">
+          <a class="tab-link" id="pills-profile-tab" data-toggle="pill" href="#pills-profile" role="tab">Profile</a>
+        </li>
+        <li class="tab-item">
+          <a class="tab-link" id="pills-kdp-tab" data-toggle="pill" href="#pills-kdp" role="tab">KDP</a>
+        </li>
+        <li class="tab-item">
+          <a class="tab-link" id="pills-report-tab" data-toggle="pill" href="#pills-report" role="tab">Report</a>
+        </li>
+      </ul>
+    </nav>
+    <hr />
+    <div class="tab-content" id="pills-tabContent">
+      <section class="tab-pane fade active in" id="pills-profile" role="tabpanel">
+        <div class="main-step">
+          <form>
+            <h5>Save your email address</h5>
+            <label for="ads_email">This is the email you used to register to our platform.</label>
+            <input type="email" name="email" class="form-control" id="ads_email" placeholder="Enter your Email address">
+            <div class="button-group">
+              <button type="submit" class="btn" id="ads_save">Save</button>
+              <button type="reset" class="btn" id="ads_reset">Reset</button>
+            </div>
+          </form>
+        </div>
+      </section>
+      <section class="tab-pane fade" id="pills-kdp" role="tabpanel">
+        <div class="main-step" id="ads_kdp_signin">
+          <h5>Sign in to your KDP account</h5>
+          <p>Make sure you are logged in to your KDP account.</p>
+          <div class="button-group">
+            <button class="btn" id="ads_refresh">Refresh Session</button>
+            <button class="btn" id="ads_signin">Sign In</button>
+          </div>
+        </div>
+        <div class="main-step hide" id="ads_kdp_books">
+          <h5>KDP account</h5>
+          <p>You are logged in to KDP account.</p>
+          <div class="table-wrapper">
+            <table class="books-table">
+              <thead>
+                <tr>
+                  <th>Author</th>
+                  <th>Book Name</th>
+                </tr>
+              </thead>
+              <tbody id="books-body">
+                <tr>
+                  <td colspan="2" class="text-center">No books found</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <div class="button-group">
+            <button class="btn" id="ads_signout">Sign Out</button>
+          </div>
+        </div>
+      </section>
+      <section class="tab-pane fade" id="pills-report" role="tabpanel">
+        <div class="main-step">
+          <h5>KDP Royalties Report Status</h5>
+          <p>Monitor the daily status of the Royalties Report.</p>
+          <div class="table-wrapper">
+            <table class="report-table">
+              <thead>
+                <tr>
+                  <th width="40">Type</th>
+                  <th width="80">Range</th>
+                  <th width="60">Status</th>
+                  <th>Timestamp</th>
+                </tr>
+              </thead>
+              <tbody id="report-body">
+                <tr>
+                  <td colspan="4" class="text-center">No books found</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </section>
+    </div>
+  </main>
+  
+  <script src="js/jquery.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script type="text/javascript" src="popup.js"></script>
+</body>
+
+</html>

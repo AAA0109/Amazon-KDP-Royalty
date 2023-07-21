@@ -1,0 +1,150 @@
+body {
+    width: 330px;
+}
+
+hr {
+    margin: 8px 0;
+    border-color: #1e1e1e;
+}
+input {
+    background: #4a4a4a !important;
+    border-color: #3c3c3c !important;
+    color: #e2e2e2 !important;
+}
+button.btn {
+    padding: 4px 9px;
+    background-color: #1a1a1a;
+    color: white;
+    outline: none !important;
+}
+.btn:hover, .btn:focus {
+    color: #e2e2e2;
+    background-color: #1c1c1c;
+}
+
+header {
+    padding: 8px 12px;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    background-color: #1e1e1e;
+    color: #e2e2e2;
+}
+
+header img {
+    width: 36px;
+}
+header span {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+
+.wrapper {
+    padding: 8px 12px;
+    background-color: #2d2d2d;
+}
+
+.tab-wrapper {
+    display: flex;
+    gap: 5px;
+}
+.tab-item .tab-link {
+    color: white;
+    transition: all .1s;
+    border-radius: 5px;
+}
+.tab-item .tab-link:hover {
+    background-color: #242424;
+}
+.tab-item .tab-link:focus {
+    background-color: #242424;
+    outline: none;
+}
+.tab-item.active .tab-link {
+    background-color: #1e1e1e;
+}
+
+.main-step {
+    padding: 5px;
+}
+.main-step h5 {
+    margin-top: 0;
+    font-size: 18px;
+    font-weight: bold;
+    color: white;
+}
+.main-step p, .main-step label {
+    font-size: 12px;
+    font-weight: 300;
+    color: #dedede;
+    margin: 0;
+}
+.button-group {
+    margin-top: 10px;
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px;
+}
+
+
+
+
+.table-wrapper {
+    margin-top: 8px;
+    max-height: 200px;
+    overflow-y: auto;
+    border: 1px solid #1e1e1e;
+}
+.table-wrapper::-webkit-scrollbar {
+    width: 6px;
+}
+.table-wrapper::-webkit-scrollbar-track {
+    border-radius: 6px;
+    background: #4a4a4a;
+}
+.table-wrapper::-webkit-scrollbar-thumb {
+    border-radius: 6px;
+    background: #1a1a1a;
+}
+.table-wrapper::-webkit-scrollbar-thumb:hover {
+    background: #212121;
+}
+
+table {
+    width: 100%;
+}
+table, th, td {
+    border: 1px solid #1e1e1e;
+    border-collapse: collapse;
+}
+thead {
+    background-color: #1e1e1e;
+    color: white;
+    font-size: 12px;
+    font-weight: bold;
+}
+tbody {
+    color: #e2e2e2;
+}
+th, td {
+    padding: 4px 8px;
+}
+td {
+    font-size: 12px;
+}
+
+
+.report-table td, .report-table th {
+    text-align: center;
+}
+
+.status-success {
+    color: green;
+}
+.status-failed {
+    color: red;
+}
+
+
+

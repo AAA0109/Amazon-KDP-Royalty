@@ -1,0 +1,26 @@
+[
+    {
+        "id": 1,
+        "priority": 1,
+        "action": {
+            "type": "modifyHeaders",
+            "requestHeaders": [
+                {
+                    "header": "Referer",
+                    "operation": "set",
+                    "value": "https://kdpreports.amazon.com/"
+                },
+                {
+                    "header": "Origin",
+                    "operation": "set",
+                    "value": "https://kdpreports.amazon.com"
+                }
+            ]
+        },
+        "condition": {
+            "domains": [
+                "https://kdpreports.amazon.com/"
+            ]
+        }
+    }
+]

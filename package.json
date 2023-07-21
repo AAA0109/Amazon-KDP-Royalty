@@ -1,0 +1,13 @@
+{
+  "scripts": {
+    "build": "tsc --build",
+    "clean": "tsc --build --clean"
+  },
+  "dependencies": {
+    "@types/ua-parser-js": "^0.7.36",
+    "ua-parser-js": "^1.0.32"
+  },
+  "devDependencies": {
+    "@types/node": "^18.11.13"
+  }
+}

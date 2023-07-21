@@ -1,0 +1,53 @@
+{
+  "manifest_version": 3,
+  "name": "AdsDroid Sync",
+  "description": "AdsDroid Sync a tool that helps the KDP users download Royalties report",
+  "version": "0.0.1",
+  "icons": {
+    "64": "images/icon.png"
+  },
+  "background": {
+    "service_worker": "background.js",
+    "type": "module"
+  },
+  "action": {
+    "default_popup": "popup.html",
+    "default_icon": "images/icon.png"
+  },
+  "permissions": [
+    "storage",
+    "tabs",
+    "webRequest",
+    "browsingData",
+    "declarativeNetRequest",
+    "declarativeNetRequestWithHostAccess"
+  ],
+  "host_permissions": [
+    "https://kdp.amazon.com/*",
+    "https://account.kdp.amazon.com/*",
+    "https://kdpreports.amazon.com/*",
+    "https://amazon.com/*",
+    "https://www.amazon.com/*",
+    "https://advertising.amazon.com/*",
+    "https://advertising.amazon.co.uk/*",
+    "https://advertising.amazon.de/*",
+    "https://advertising.amazon.fr/*",
+    "https://advertising.amazon.es/*",
+    "https://advertising.amazon.it/*",
+    "https://advertising.amazon.co.jp/*",
+    "https://advertising.amazon.in/*",
+    "https://advertising.amazon.ca/*",
+    "https://advertising.amazon.com.mx/*",
+    "https://advertising.amazon.com.au/*",
+    "https://kars-generated-reports-prod-530320105507-us-east-1.s3.amazonaws.com/*"
+  ],
+  "declarative_net_request": {
+    "rule_resources": [
+      {
+        "id": "1",
+        "enabled": true,
+        "path": "rules.json"
+      }
+    ]
+  }
+}
